@@ -5,152 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hari A - AI & Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for Lato and Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Hero Section: The attention-grabbing introduction -->
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
         <div class="hero-content">
             <h1 class="fade-in">HARI A</h1>
-            <p class="tagline type-effect"></p> <!-- Tagline will be typed dynamically by JS -->
+            <p class="tagline type-effect"></p>
             <div class="contact-links fade-in delay-1">
-                <a href="mailto:hariaakash007@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email Me</a>
-                <a href="https://www.linkedin.com/in/hari-aakash-5859a9299/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/Hari2k6" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:hariaakash007@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/hari-aakash-5859a9299/" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Hari2k6" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
             </div>
-            <p class="phone-number fade-in delay-2"><i class="fas fa-phone"></i> +91 8056489868</p>
+            <p class="phone-number fade-in delay-2">
+                <i class="fas fa-phone"></i> +91 8056489868
+            </p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main class="container">
-        <!-- About Section (Expanded Tagline) -->
-        <section id="about" class="content-section hidden">
-            <h2>About Me</h2>
-            <p>As an energetic and passionate AI and Data Science student, I am driven by a profound curiosity to explore how technology can solve complex real-world problems. My academic journey and hands-on projects have equipped me with a strong foundation in machine learning, deep learning, data analysis, and programming. I thrive in environments that challenge me to learn, innovate, and apply my skills to create impactful solutions.</p>
-        </section>
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- About Section -->
+            <section id="about" class="content-section hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <p>Passionate AI and Data Science student driven by curiosity to solve real-world problems through technology. Strong foundation in machine learning, deep learning, and data analysis with hands-on project experience.</p>
+            </section>
 
-        <!-- Education Section -->
-        <section id="education" class="content-section hidden">
-            <h2>EDUCATION</h2>
-            <div class="education-item">
-                <h3>B.Tech AI and DS</h3>
-                <p>Shiv Nadar University, 2023-2027</p>
-                <p>CGPA: 8.58</p>
-            </div>
-            <div class="education-item">
-                <h3>12th Standard</h3>
-                <p>Akshaya Academy, 2021-2023</p>
-                <p>Percentage: 91% (AISSCE)</p>
-            </div>
-            <div class="education-item">
-                <h3>10th Standard</h3>
-                <p>First Step Public School, 2016-2021</p>
-                <p>Percentage: 71.4% (AISSE)</p>
-            </div>
-        </section>
+            <!-- Education Section -->
+            <section id="education" class="content-section hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="edu-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>B.Tech AI and DS</h3>
+                            <p class="institution">Shiv Nadar University</p>
+                            <p class="duration">2023-2027</p>
+                            <p class="grade">CGPA: 8.58</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>12th Standard</h3>
+                            <p class="institution">Akshaya Academy</p>
+                            <p class="duration">2021-2023</p>
+                            <p class="grade">91% (AISSCE)</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>10th Standard</h3>
+                            <p class="institution">First Step Public School</p>
+                            <p class="duration">2016-2021</p>
+                            <p class="grade">71.4% (AISSE)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="content-section hidden">
-            <h2>EXPERIENCE</h2>
-            <div class="experience-item">
-                <h3>Internship at Tech Mahindra</h3>
-                <ul>
-                    <li>Developed an AI-driven prototype for blend optimization, simulating chemical formulations to meet target properties under real-world constraints.</li>
-                    <li>Leveraged data modeling and optimization techniques to enhance formulation accuracy and efficiency.</li>
-                </ul>
-            </div>
-        </section>
+            <!-- Skills Section -->
+            <section id="skills" class="content-section hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-code"></i> Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li>Scikit-learn</li>
+                            <li>Pandas & NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Tableau</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI/ML</h3>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                            <li>Data Analysis</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <!-- Skills Section - Moved before Projects -->
-        <section id="skills" class="content-section hidden">
-            <h2>SKILLS</h2>
-            <div class="skills-grid">
-                <div>
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>Java</li>
-                        <li>MySQL</li>
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Experience Section -->
+            <section id="experience" class="content-section hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h3>AI Intern</h3>
+                        <span class="company">Tech Mahindra</span>
+                    </div>
+                    <ul class="achievements">
+                        <li>Developed AI-driven prototype for blend optimization using machine learning algorithms</li>
+                        <li>Enhanced formulation accuracy through advanced data modeling techniques</li>
+                        <li>Worked with real-world constraints and chemical property optimization</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Technologies/Libraries</h3>
-                    <ul>
-                        <li>Scikit-learn</li>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                        <li>Tableau</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>AI/ML</h3>
-                    <ul>
-                        <li>Basics of Machine Learning</li>
-                        <li>Deep Learning</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Concepts</h3>
-                    <ul>
-                        <li>Data Structures</li>
-                        <li>Design and Analysis of Algorithms</li>
-                        <li>Probability</li>
-                        <li>Linear Algebra</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Projects Section - Now after Skills, with elaborated text -->
-        <section id="projects" class="content-section hidden">
-            <h2>PROJECTS</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>AI-Based Mental Health Symptom Classifier</h3>
-                    <p>Developed a robust deep learning model designed to predict and classify various mental health disorders based on a comprehensive set of symptoms. This project involved integrating and harmonizing data from multiple diverse datasets to ensure broad applicability. My focus was on achieving high accuracy, ensuring the model's interpretability for clinical insights, and demonstrating its real-world applicability in early detection and support systems. Technologies used include Python, TensorFlow/Keras, and scikit-learn for model development and evaluation.</p>
+            <!-- Projects Section -->
+            <section id="projects" class="content-section hidden">
+                <div class="section-header">
+                    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+                    <div class="section-line"></div>
                 </div>
-                <div class="project-card">
-                    <h3>Counterfeit Currency Detection Using Image Recognition</h3>
-                    <p>Engineered a sophisticated deep learning solution from the ground up to accurately identify counterfeit currency notes through advanced image analysis. The core of this project involved creating a unique, custom dataset by meticulously collecting and labeling images of both genuine and fake currency notes. I then designed and trained a Convolutional Neural Network (CNN) architecture, optimizing it to classify the authenticity of notes with exceptional precision, significantly reducing the risk of fraud. This project showcased strong skills in computer vision, deep learning model training, and data curation.</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Car Recommendation Engine</h3>
+                        <p>NLP-powered recommendation system with natural language queries and intelligent matching algorithms.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Web Scraping</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Mental Health Classifier</h3>
+                        <p>Deep learning model for predicting mental health disorders using symptom data with high accuracy and clinical interpretability.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Currency Detection System</h3>
+                        <p>CNN-based solution for identifying counterfeit currency using custom dataset and advanced image recognition techniques.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>CNN</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Blend Optimization Tool</h3>
+                        <p>AI-powered chemical blend optimizer with real-time visualization and constraint-based optimization algorithms.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Optimization</span>
+                            <span>Data Viz</span>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="project-card">
-                    <h3>AI-Based Blend Optimization Tool</h3>
-                    <p>Built an innovative prototype for optimizing chemical blends, leveraging real-world experimental data to meet specific target properties. This AI-driven tool applies advanced optimization algorithms to intelligently balance complex cost and property constraints, such as viscosity, density, and purity. Key features include lot-level refinement, allowing for precise adjustments based on batch variations, and real-time visualization of optimization results, providing immediate feedback and enabling informed decision-making for chemical engineers. This project highlights my ability to apply AI to solve complex industrial problems.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Intelligent Car Recommendation System</h3>
-                    <p>Designed and implemented a dynamic recommendation engine for automobiles, utilizing a comprehensive dataset web-scraped from CarDekho. This system empowers users to query for optimal car matches through both natural language input (e.g., "a fuel-efficient SUV for city driving") and structured selections (e.g., brand, price range). I developed an NLP-based model to interpret user intent from natural language queries and efficiently retrieve the most relevant car recommendations from the extensive dataset, providing a personalized and intuitive user experience. This project demonstrates expertise in web scraping, NLP, and recommendation system architecture.</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Hari A. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Hari A. Crafted with <i class="fas fa-heart"></i> and creativity.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
