@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This site showcases my background, education, skills, projects, and professional experience in the fields of Artificial Intelligence, Data Science, and software development.
 
 ## 🌐 Live Website
-###[Visit My Portfolio](https://hari2k6.github.io/portfolio/)  
+### [Visit My Portfolio](https://hari2k6.github.io/portfolio/)  
 
 ## 📁 Project Structure
 ├── index.html # Main HTML file
